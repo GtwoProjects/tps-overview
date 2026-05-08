@@ -1,0 +1,74 @@
+name: Bug report
+description: Tell us something isn't working the way it should
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file this. The more specific you can be, the faster we can fix it.
+        Not sure what a good bug report looks like? See [examples](https://github.com/GtwoProjects/tps-overview/blob/main/docs/examples.md).
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of TPS?
+      options:
+        - Dashboard
+        - Driver
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      placeholder: |
+        When I clicked "Start job" the page froze for about 10 seconds and then showed a red error "Job failed". The job didn't appear in my jobs list.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      placeholder: |
+        The job to start and show up in the jobs list, or fail with a clearer message.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Log in to the Dashboard
+        2. Click "New job"
+        3. Pick the "Short test" template
+        4. Click "Start job"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Sometimes
+        - Once
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot or screen recording
+      description: Drag and drop an image or video into this box. Optional but really helpful.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Your name / company
+      description: Optional. Helps us prioritise and follow up if we have questions.
