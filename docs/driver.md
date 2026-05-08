@@ -11,24 +11,14 @@ If you've lost the link, ask whoever set up your account.
 ## Installing on Windows
 
 1. Double-click the installer.
-
-   ![Installer first screen](images/PLACEHOLDER-driver-installer-1.png)
-
 2. Click through the prompts. The defaults are fine.
-
-   ![Installer progress](images/PLACEHOLDER-driver-installer-2.png)
-
 3. When it finishes, the Driver starts on its own. You'll see a small icon in your system tray (bottom-right corner of the screen).
-
-   ![System tray icon](images/PLACEHOLDER-driver-tray.png)
 
 That's the install. You don't need to do anything else for the Driver itself — it talks to the Dashboard automatically.
 
 ## Confirming it's connected
 
 Right-click the tray icon. The menu shows the Driver's status.
-
-![Driver status menu](images/PLACEHOLDER-driver-menu.png)
 
 "Connected" means it's talking to the Dashboard. "Disconnected" usually means a network issue or that you're not logged in to the Dashboard yet.
 
