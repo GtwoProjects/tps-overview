@@ -66,9 +66,3 @@ body:
     attributes:
       label: Screenshot or screen recording
       description: Drag and drop an image or video into this box. Optional but really helpful.
-
-  - type: input
-    id: contact
-    attributes:
-      label: Your name / company
-      description: Optional. Helps us prioritise and follow up if we have questions.
