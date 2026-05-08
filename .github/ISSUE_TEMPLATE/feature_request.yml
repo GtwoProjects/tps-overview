@@ -1,0 +1,52 @@
+name: Feature request
+description: Ask for something the product doesn't do yet
+title: "[Feature] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tell us what you wish TPS could do, and why it would help. The "why" matters as much as the "what" — that's how we decide what to build first.
+        Not sure what a good feature request looks like? See [examples](https://github.com/GtwoProjects/tps-overview/blob/main/docs/examples.md).
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of TPS?
+      options:
+        - Dashboard
+        - Driver
+        - Other
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What would you like to be able to do?
+      placeholder: |
+        A "Re-run" button on the results page that starts a new job with the same inputs as the one that just finished.
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why does this help you?
+      placeholder: |
+        I do a lot of "did this fix it?" testing. Right now I retype the same form for every round and it adds up.
+    validations:
+      required: true
+
+  - type: input
+    id: who-else
+    attributes:
+      label: Who else benefits?
+      description: Optional. A sentence is fine.
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: Have you tried a workaround?
+      description: Optional. If you've found a way around it, tell us what — it helps us understand how urgent this is.
