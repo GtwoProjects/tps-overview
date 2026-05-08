@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Not sure how to fill out a bug or feature request?
+    url: https://github.com/GtwoProjects/tps-overview/blob/main/docs/examples.md
+    about: See examples of good submissions before filing.
