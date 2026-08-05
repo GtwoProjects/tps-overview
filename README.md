@@ -8,6 +8,7 @@ Read [docs/getting-started.md](docs/getting-started.md). Five minutes, then you 
 
 ## Need help with something specific?
 
+- [User guide](docs/user-guide.md) — the full walkthrough: creating a video, approving it, downloading and publishing it.
 - [Dashboard guide](docs/dashboard.md) — logging in, running a job, reading results.
 - [Driver guide](docs/driver.md) — installing it, starting it, what to do if it won't connect.
 - [FAQ](docs/faq.md) — short answers to questions we get a lot.
