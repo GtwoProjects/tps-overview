@@ -37,7 +37,7 @@ Press **Ctrl+D** or click **Jobs** in the sidebar. The Jobs screen has three sec
 - **Available Jobs** - the open queue. **Claim** takes a job; checkboxes plus **Claim Selected** take several at once.
 - **My Jobs** - everything this VA holds, with the next action per job.
 
-Accepting or claiming starts pack generation automatically - there is no separate button for it. The job card shows the build stages as they run: **Generating script → Synthesizing narration → Transcribing audio → Analyzing scenes → Assembling pack**, and downloads the reference video alongside. When the card says the pack is ready, the button reads **Start Recording** (or **START WORK** once everything is synced).
+Accepting or claiming starts pack generation automatically - there is no separate button for it. The job card shows the build stages as they run: **Generating script -> Synthesizing narration -> Transcribing audio -> Analyzing scenes -> Assembling pack**, and downloads the reference video alongside. When the card says the pack is ready, the button reads **Start Recording** (or **START WORK** once everything is synced).
 
 If a job was claimed the night before, the pack is often already built - the card then goes straight to ready.
 
@@ -51,19 +51,19 @@ Recording a job means recording a take for each scene:
 
 - **START TAKE / STOP TAKE** (Alt+1) - start and stop recording the current scene.
 - **Rollback Take** (Alt+2) - throw the current take away and record the scene again.
-- **Next Scene** (Alt+→) - move on after stopping a take. The counter shows where you are, e.g. 3/12.
+- **Next Scene** (Alt+->) - move on after stopping a take. The counter shows where you are, e.g. 3/12.
 - **Ctrl+Space** - pause everything; the pause overlay offers **Resume Take**, **Restart Scene**, **Finish & Finalize**, **Rollback**.
 - **Enter Patch Mode** (Alt+3) then **Record Patch** (Alt+4) - re-record a short piece from the current position instead of the whole scene.
 
 Finished takes upload by themselves in the background - there is no upload button. The **Uploading Takes...** window shows the queue and progress.
 
-## Step 4 - Send to render, then approve (Driver → Dashboard)
+## Step 4 - Send to render, then approve (Driver -> Dashboard)
 
 When every scene has a take, the Driver sidebar shows **✓ Ready to render** (if scenes are missing it lists which ones, and the button stays disabled). The VA clicks **End Session & Start Rendering**. The Driver confirms with "Video sent to render farm" and the VA's part is done.
 
 Back on the Dashboard, the job runs through **Ingesting** (stitching the takes) and **Quality check**, then stops at **Awaiting approval**. The **Approvals** page in the sidebar lists these jobs - the badge on the sidebar item is the count. Click **Approve for Rendering**. Nothing renders until an operator approves.
 
-Grid statuses, in the order of a normal run: Intake → Queued → Assigned (or Pending acceptance) → Building pack → Pack ready → Recording → Ingesting → Quality check → Awaiting approval → Rendering → Done. Click a job's row, then **Open full job detail** - the banner there explains the current status in plain words.
+Grid statuses, in the order of a normal run: Intake -> Queued -> Assigned (or Pending acceptance) -> Building pack -> Pack ready -> Recording -> Ingesting -> Quality check -> Awaiting approval -> Rendering -> Done. Click a job's row, then **Open full job detail** - the banner there explains the current status in plain words.
 
 ## Step 5 - Download and publish (Dashboard)
 
