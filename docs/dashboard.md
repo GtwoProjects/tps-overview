@@ -1,25 +1,45 @@
 # Using the Dashboard
 
-The Dashboard is a website. You don't install anything for it — open the URL we sent you and log in.
+The Dashboard is a website — nothing to install. Open the URL we sent you and log in. It's branded **Titan Operator Console**; that's the same thing this doc calls the Dashboard.
 
 ## Logging in
 
-When you open the Dashboard, you see a login screen.
+Your email and password came in your welcome email. If you can't find them, ask your contact at the company that gave you access. If the password doesn't work, try "Forgot password" first, then [file a bug](../../../issues/new?template=bug_report.yml).
 
-Your username and password came in your welcome email. If you can't find them, ask your contact at the company that gave you access.
+Before you log in the app can't reach the farm, so pages may show errors or a "farm unreachable" banner. That clears once you're authenticated.
 
-If your password isn't working, try the "Forgot password" link first. If that doesn't help, [file a bug](../../../issues/new?template=bug_report.yml).
+## What's in the sidebar
 
-## Running a simple job
+You only see the items your role allows, so your list will be shorter than this one. An admin sees all of them:
 
-Once you're in, click "New job". You'll see a form.
+| Item | What it's for |
+|---|---|
+| Production Grid | Every job, with filters and the New Job dialog. This is where most work starts. |
+| Orchestrator | Pipeline view of jobs in flight. |
+| System Metrics | Throughput, queue depth, storage. |
+| VA Analytics | Per-VA output and timing. |
+| VA Roster | The VAs, their status and assignments. |
+| Asset Packs | The generated packs (script, narration, scenes) per job. |
+| QC Queue | Rendered videos waiting on a quality check. |
+| Approvals | Jobs stopped at "awaiting approval". Nothing renders until someone approves here. |
+| Blocked Jobs | Jobs that failed or need a human decision. |
+| Upload Center | Finished videos, their SEO metadata, and publishing. |
+| Payroll | VA payment tickets. |
+| Diagnostics | Live health of the farm and its workers. |
+| Users | Accounts and roles (admin only). |
+| Grid Overlord | Worker nodes — restart, drain, inspect (admin only). |
+| Settings | System settings (admin only). |
 
-Fill in the fields. The defaults are usually fine for a first run — pick a small input so you can see the result quickly. Click "Start".
+## Running a job
 
-The job appears on your jobs list with a status next to it. The Driver picks it up within a few seconds.
+Open **Production Grid** and click **New Job**. Fill in a title and a source (a YouTube URL or pasted reference text) — **Create Job** stays disabled until both are there. Everything else has a working default.
 
-## Reading the results
+The job lands in the grid and waits for a VA to claim it. The full field-by-field walkthrough is in the [user guide](user-guide.md).
 
-When the job finishes, the status changes to "Done" and a "View" button appears next to it.
+## Following a job
 
-If the result looks wrong — or if the job sits at "Running" for much longer than you'd expect — [file a bug](../../../issues/new?template=bug_report.yml). The more specific you can be, the faster we can fix it.
+Status moves roughly: **Intake → Queued → Assigned → Pack building → Pack ready → Recording → Ingesting → QC → Awaiting approval → Rendering → Done**. A job can also land on **Pending acceptance**, **Declined**, **Blocked**, **Failed** or **Cancelled**. The home page's log feed shows the same transitions in one list.
+
+Click a row to open the job, or **Preview** / **Download** on a **Done** job to watch it or save `final_video.mp4`.
+
+If a job sits in one status far longer than the rest, or the result looks wrong, [file a bug](../../../issues/new?template=bug_report.yml). The more specific you can be, the faster we can fix it.
